@@ -15,8 +15,7 @@ export class NegociacaoContoller {
 
     adiciona() {  
         const negociacao = this.criaNegociacao();
-        this.negociacoes.adiciona(negociacao);
-        this.negociacoes.lista().pop();
+        this.negociacoes.adiciona(negociacao); 
         console.log(this.negociacoes.lista());
         this.limparFormulario();
     }
